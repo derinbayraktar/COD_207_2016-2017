@@ -1,0 +1,32 @@
+int var1 = 5;
+int var2 = 10;
+//int sonuc;
+/* */
+void setup() {
+  size(300, 300);
+  
+}
+
+int customFunction() {
+  //println("custom function is called by user");
+  int privateSonuc = var1 + var2;
+  
+  return privateSonuc;
+  //println(sonuc);
+}
+
+void draw() {
+  
+
+ 
+  println(customFunction());
+
+  background(#E74C3C);
+  
+  rect(10, 10, 100, 100 + mouseY);
+  
+}
+
+void keyPressed() {
+  customFunction();
+}
