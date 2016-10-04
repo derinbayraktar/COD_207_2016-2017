@@ -1,0 +1,48 @@
+// Piet Mondrian islerinden birini secip onu tekrar çizdirin
+// https://www.google.com.tr/search?q=piet+mondrian&safe=off&source=lnms&tbm=isch&sa=X&ved=0ahUKEwj9zu6x4sDPAhUmJsAKHWRFBZUQ_AUICCgB&biw=1440&bih=728#safe=off&tbm=isch&q=mondrian
+
+// Once setup ve draw fonksiyonları tanımlanır
+int kareW = 30;
+int kareH = 80;
+
+void setup() {
+  
+  // Bu satır pencere boyutunu ayarlar
+  size(200,200);
+
+}
+
+
+void draw() {
+  background(#cccccc);
+  // statik verilerle aritmetik olarak konum hesaplama
+  //rect(200/2 - 30/2,200/2 - 30/2,30,30);
+  
+  // dinamik olarak poziyon ve ölçülerin hesaplanması
+  //rect(width/2 - kareW/2, height/2 - kareH/2, kareW,kareH);
+  
+  //şekiller çevresindeki çizgileri kaldırır
+  noStroke();
+  
+  // dikdortgen çizer
+  rectMode(CENTER);
+  
+  // stroke kalınlığını ayarlanır
+  strokeWeight(5);
+  
+  // stroke rengini belirler
+  stroke(#34495E);
+  
+  // dolgu rengini belirler
+  fill(#27AE60);
+  
+  // ekrana dikdörtgen çizdirir
+  rect(width/2,height/2, kareW,kareH);
+  
+  // dolgu rengini ayarlar
+  fill(#C0392B);
+  
+  // ekrana ellipse çizdirir
+  ellipse(width/2,height/2,50,50);
+}
+
